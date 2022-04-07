@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor-function-property</title>
+</head>
+
+<body>
+    <script>
+        function Person() {
+            this.firstName = "";
+            this.lastName = "";
+            this.sayHello = function (name) {
+                console.log(`Hello ${name} my name is ${this.firstName}`)
+            }
+        }
+        const ivan = new Person()
+        ivan.firstName = "Ivan";
+        ivan.sayHello("Sayang")
+    </script>
+</body>
+
+</html>
